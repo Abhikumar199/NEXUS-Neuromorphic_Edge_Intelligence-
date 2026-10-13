@@ -241,14 +241,7 @@ Open `Arduino_IDE/Arduino_IDE.ino` in the Arduino IDE and select the appropriate
 
 The file `python server.py` opens a basic TCP server on port `5000` and prints received messages. It is a minimal receiver for experimentation, not a complete dashboard or alerting service. Run it only in a trusted environment and restrict network access as appropriate.
 
-## Limitations and future work
 
-- **Controlled testbed:** Results come from a small PVC-pipe prototype; validation on real sewer infrastructure remains future work.
-- **Sensor reliability:** Distinguishing partial from severe blockage is difficult when flow approaches zero or sensor readings overlap.
-- **Firmware consistency:** The checked-in Arduino sketch and the paper's SNN architecture are not yet fully aligned.
-- **Energy evaluation:** More rigorous measurements of energy per inference, duty-cycle behavior, and communication overhead are needed.
-- **Robustness:** Broader experiments should evaluate changing flow rates, sensor drift, varied contaminant concentrations, and environmental noise.
-- **Future directions:** The study proposes evaluating additional audio and pressure sensors, adaptive thresholds, hybrid SNN approaches, and neuromorphic hardware.
 
 ## Research context
 
@@ -256,15 +249,4 @@ The file `python server.py` opens a basic TCP server on port `5000` and prints r
 
 The project combines low-cost sensing, edge AI, and spiking neural networks to explore proactive infrastructure monitoring.
 
-## Acknowledgements
 
-The accompanying study acknowledges support from the Atal Bihari Vajpayee–Indian Institute of Information Technology and Management, Gwalior, under the Faculty Initiation Grant (FIG) scheme, Grant No. **ABV-IIITM/DoRC/FIG/2025-26/2379**.
-
-## Citation
-
-If you use this work, please cite the project and its associated paper. Add the final publication venue, year, DOI, and author-approved citation once those details are available.
-
----
-
-**Maintainer:** [Abhishek Kumar](https://github.com/Abhikumar199)  
-**Repository:** [NEXUS-Neuromorphic Edge Intelligence](https://github.com/Abhikumar199/NEXUS-Neuromorphic_Edge_Intelligence-)
